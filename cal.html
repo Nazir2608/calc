@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        table,td,th,tr{
+            width: 10px;
+            border: 2px solid black;
+        }
+        #ttt{ 
+            width: 10px;
+        }
+
+        .container{ 
+            width: 350px ;
+            height: 250px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-image: linear-gradient(red
+            ,blue,green);
+        }
+        .item1{ 
+            margin: 15px;
+        }
+        .item2{ 
+            margin: 15px;
+        }
+        .item3{ 
+            margin: 40px;
+        }
+        .item4{ 
+
+            text-align: center;
+            
+            
+        }
+        label {
+    color: white;
+}
+input[type="button"] {
+    margin: 5px;
+    background-color: rgb(137, 118, 155);
+}
+    </style>
+<script src="./calculator.js"></script>
+</head>
+<body>
+   
+
+     <div class="container"> 
+
+        <div class="item4"><h2>Calculator App </h2></div>
+        <div class="item1">  <td colspan="2"><label for="txtNo1">Enter 1st number </label></td>
+            <td <td colspan="2"><input type="text" name="txtNo1" id="txtNo1"></td> </div>
+
+        <div class="item2"> <td <td colspan="2"><label for="txtNo2"> Enter 2nd number</label></td>
+            <td <td colspan="2"><input type="text" name="txtNo2" id="txtNo2"></td>  </div>
+
+            
+            <div class="item4">   <input type="button" onclick="btnPlus_Click()" value="+"> 
+                <input type="button"  onclick="btnSub_Click()" value="-"> 
+                <input type="button"  onclick="btnmultiply_Click()" value="*"> 
+                <input type="button" onclick="btndivide_Click()" value="/">   </div>
+                
+                <div class="item3">    <td <td colspan="2"><label for="txtResult">Result</label></td>
+                    <td <td colspan="2"><input type="text" name="txtResult" id="txtResult"></td> </div>
+
+     </div>
+
+
+
+</body>
+</html>
